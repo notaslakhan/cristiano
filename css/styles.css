@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #000;
+  z-index: 9;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+
+.navigation a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: gold;
+  transition: .3s;
+}
+
+.navigation a:hover::before {
+  width: 100%;
+}
+
+.brands {
+  margin-top: 100px;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ursu__image, .sunglasses__image, .fragrances__image, .footwear__image {
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  width: 250px;
+  height: 600px;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: width .3s, filter .3s;
+}
+
+.ursu__image:hover,
+.sunglasses__image:hover,
+.fragrances__image:hover,
+.footwear__image:hover,
+.cr7-highlights:hover {
+  width: 380px;
+  filter: grayscale(0%);
+}
+
+.ursu__title, .sunglasses__title, .fragrances__title, .footwear__title {
+  color: gold;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+/* .highlights {
+  margin-top: 190px;
+}
+
+.highlights iframe {
+  display: flex;
+  margin: 0 auto;
+}
+
+.highlights__paragraph  {
+  color: #fff;
+  font-weight: 900;
+  font-size: 34px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.highlights-title {
+  margin-bottom: 30px;
+}
+
+.highlights__author {
+  color: #fff;
+  font-weight: 500;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.highlights__author a {
+  transition: .3s;
+}
+
+.highlights__author a:hover {
+  text-decoration: none;
+  color: gold;
+} */
+
+.museum__video {
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.museum__title {
+  font-weight: 900;
+  color: gold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.museum {
+  margin-top: 120px;
+}
+
+.video-gallery {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-gallery .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-gallery ul {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.video-gallery ul li {
+  list-style: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.video-gallery ul li video {
+  width: 200px;
+  outline: 1px solid #fff;
+  transition: all .3s;
+}
+
+.video-gallery ul li video:hover {
+  transform: scale(1.1);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="assets/images/favicon/faviconV2.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Cristiano Ronaldo</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="navigator">
+        <div class="logo">
+          <a href="index.html" target="_blank">
+            <img class="logo__image" src="assets/images/logo/cr7logo.svg" alt="Cristiano Ronaldo logo">
+          </a>
+        </div>
+        <div class="nav">
+          <nav class="navigation">
+            <a href="#highlights-anchor">career highlights</a>
+            <a href="#">brands</a>
+            <a href="#museum-anchor">signature museum</a>
+            <a href="#">partners</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="brands">
+      <div class="container">
+        <div class="gallery">
+          <div class="ursu">
+            <img class="ursu__image" src="assets/images/brands/brand_ursu.jpg" alt="Ursu water brand">
+            <p class="ursu__title">#ursu</p>
+          </div>
+          <div class="sunglasses">
+            <img class="sunglasses__image" src="assets/images/brands/brand_eyewear.jpg" alt="Cristiano Ronaldo sunglasses">
+            <p class="sunglasses__title">#sunglasses</p>
+          </div>
+          <div class="fragrances">
+            <img class="fragrances__image" src="assets/images/brands/brand_fragrances.jpg" alt="Cristiano Ronaldo fragrances">
+            <p class="fragrances__title">#fragrances</p>
+          </div>
+          <div class="footwear">
+            <img class="footwear__image" src="assets/images/brands/brand_footwear.jpg" alt="Cristiano Ronaldo footwear">
+            <p class="footwear__title">#footwear</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="highlights">
+      <div class="container">
+        <div class="highlights-title">
+          <p class="highlights__paragraph" id="highlights-anchor">Here is some of Ronaldo's legendary goals</p>
+          <p class="highlights__author">video's author <a href="https://www.youtube.com/@mrbundesteamchannel" target="_blank">mr bundesteam</a></p>
+        </div>
+        <iframe width="960" height="515" src="https://www.youtube.com/embed/qc18PDu90KE?si=4d-4R1nCarg-EJqR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      </div>
+    </section> -->
+
+    <section class="museum">
+      <div class="container">
+        <div class="museum-text">
+          <p class="museum__title">cr7 signature museum</p>
+        </div>
+        <div class="museum-presentation" id="museum-anchor">
+          <video title="Cristiano Ronaldos Museum" class="museum__video" src="assets/videos/CR7SignatureMuseum_video.webm" muted autoplay loop></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="video-gallery">
+        <video class="slider" src="assets/videos/CR7_WebsiteHighlights-Sporting_desktop.mp4" loop muted autoplay></video>
+
+        <ul>
+          <li onclick="videoSlider('./assets/videos/CR7_WebsiteHighlights-Sporting_desktop.mp4')"><video src="assets/videos/CR7_WebsiteHighlights-Sporting_desktop.mp4" loop muted autoplay></video></li>
+          <li onclick="videoSlider('./assets/videos/CR7_WebsiteHighlights-ManUtd_desktop.mp4')"><video src="assets/videos/CR7_WebsiteHighlights-ManUtd_desktop.mp4" loop muted autoplay></video></li>
+          <li onclick="videoSlider('./assets/videos/CR7_WebsiteHighlights-RealMadrid_desktop.mp4')"><video src="assets/videos/CR7_WebsiteHighlights-RealMadrid_desktop.mp4" loop muted autoplay></video></li>
+          <li onclick="videoSlider('./assets/videos/CR7_WebsiteHighlights-Juventus_desktop.mp4')"><video src="assets/videos/CR7_WebsiteHighlights-Juventus_desktop.mp4" loop muted autoplay></video></li>
+          <li onclick="videoSlider('./assets/videos/CR7_WebsiteHighlights-AlNassr_desktop.mp4')"><video src="assets/videos/CR7_WebsiteHighlights-AlNassr_desktop.mp4" loop muted autoplay></video></li>
+          <li onclick="videoSlider('./assets/videos/CR7_WebsiteHighlights-Portugal_desktop.mp4')"><video src="assets/videos/CR7_WebsiteHighlights-Portugal_desktop.mp4" loop muted autoplay></video></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stay-tuned">
+      <div class="container">
+        <div class="stay-tuned__title">
+          <p>stay tuned</p>
+          <p>Subscribe my newsletter and don’t miss any update on new products, promotions or even career events.</p>
+        </div>
+        <div class="stay-tuned__form">
+          <form action=""></form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
